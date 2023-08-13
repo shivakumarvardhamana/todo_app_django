@@ -1,4 +1,4 @@
-FROM 
+FROM python:latest
 
 COPY . .
 

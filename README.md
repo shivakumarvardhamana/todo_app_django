@@ -34,11 +34,11 @@ Setting Environment Variables:
 
 The application is accessible at http://localhost:9393, displaying the title with an orange border.
 
-   -Files Overview:
-     - gencsv.sh : the shell script to generate the inputfile
-     - part-1-log: the file is contain the logs of docker container
-     - part-1-output: store the result of application csvserver
-     - part-1-cmd: the cmd used to run the container with inputfile and enviroment variable
+- Files Overview:
+  - gencsv.sh : the shell script to generate the inputfile
+  - part-1-log: the file is contain the logs of docker container
+  - part-1-output: store the result of application csvserver
+  - part-1-cmd: the cmd used to run the container with inputfile and enviroment variable
 
 **Part 2**: Docker Compose Setup
 - **The requirefile available in part-2 folder**
@@ -61,9 +61,9 @@ To stop the services, use:
    
 
         docker-compose down
-  -Files Overview:
-    - csvserver.env : file to store the env variable need to pass in docker-compose file to read as file
-    - docker-compose: the file contain all steps to crete container with require details
+- Files Overview:
+  - csvserver.env : file to store the env variable need to pass in docker-compose file to read as file
+  - docker-compose: the file contain all steps to crete container with require details
 
 **Part 3**: Adding Prometheus for Metrics Collection
 - **The requirefile available in part-3 folder**

@@ -64,7 +64,7 @@ To stop the services, use:
         docker-compose down
 - Files Overview:
   - csvserver.env : file to store the env variable need to pass in docker-compose file to read as file
-  - docker-compose: the file contain all steps to crete container with require details
+  - docker-compose: the file contain all steps to create container with require details
 
 **Part 3**: Adding Prometheus for Metrics Collection
 - **The requirefile available in part-3 folder**

@@ -4,8 +4,8 @@ This project demonstrates the deployment of a CSV server application using Docke
 Project Structure
 
 The project is divided into three parts:
-- ##Part-1: Running the CSV Server Container
- -  The requirefile available in part-1 folder
+- **Part-1**: Running the CSV Server Container
+ - **The requirefile available in part-1 folder**
  - image: infracloudio/csvserver:latest
 
        docker run -d --name csvserver infracloudio/csvserver:latest
@@ -40,9 +40,9 @@ part-1-log: the file is contain the logs of docker container
 part-1-output: store the result of application csvserver
 part-1-cmd: the cmd used to run the container with inputfile and enviroment variable
 
-Part 2: 
-- The requirefile available in part-2 folder
-Docker Compose Setup
+**Part 2**: Docker Compose Setup
+- **The requirefile available in part-2 folder**
+
 
 In this part, the Docker commands from Part 1 were converted into a docker-compose.yml file for easier management.
 
@@ -64,8 +64,9 @@ To stop the services, use:
 - csvserver.env : file to store the env variable need to pass in docker-compose file to read as file
 - docker-compose: the file contain all steps to crete container with require details
 
-Part 3: Adding Prometheus for Metrics Collection
-
+**Part 3**: Adding Prometheus for Metrics Collection
+- **The requirefile available in part-2 folder**
+  
 Prometheus was integrated to collect metrics from the CSV server.
 
 Prometheus Configuration:

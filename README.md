@@ -34,11 +34,11 @@ Setting Environment Variables:
 
 The application is accessible at http://localhost:9393, displaying the title with an orange border.
 
-Files Overview:
-gencsv.sh : the shell script to generate the inputfile
-part-1-log: the file is contain the logs of docker container
-part-1-output: store the result of application csvserver
-part-1-cmd: the cmd used to run the container with inputfile and enviroment variable
+- Files Overview:
+   - gencsv.sh : the shell script to generate the inputfile
+   - part-1-log: the file is contain the logs of docker container
+   - part-1-output: store the result of application csvserver
+   - part-1-cmd: the cmd used to run the container with inputfile and enviroment variable
 
 **Part 2**: Docker Compose Setup
 - **The requirefile available in part-2 folder**

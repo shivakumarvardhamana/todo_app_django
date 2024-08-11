@@ -61,11 +61,12 @@ To stop the services, use:
    
 
         docker-compose down
-- csvserver.env : file to store the env variable need to pass in docker-compose file to read as file
-- docker-compose: the file contain all steps to crete container with require details
+ - Files Overview:
+    - csvserver.env : file to store the env variable need to pass in docker-compose file to read as file
+   - docker-compose: the file contain all steps to crete container with require details
 
 **Part 3**: Adding Prometheus for Metrics Collection
-- **The requirefile available in part-2 folder**
+- **The requirefile available in part-3 folder**
   
 Prometheus was integrated to collect metrics from the CSV server.
 
@@ -75,11 +76,11 @@ A prometheus.yml file was created to specify the target application (csvserver:9
 Docker Compose Setup:
 The docker-compose.yml file was updated to include the Prometheus container (prom/prometheus:v2.45.2), with the prometheus.yml file mounted as a volume.
 
-Files Overview:
-        csvserver.env: Stores environment variables for the CSV server.
-        docker-compose.yml: Defines the CSV server and Prometheus configurations.
-        prometheus.yml: Specifies the Prometheus target application.
-        inputFile: The file mounted as a volume to the CSV server for data input.
+-Files Overview:
+  - csvserver.env: Stores environment variables for the CSV server.
+  - docker-compose.yml: Defines the CSV server and Prometheus configurations.
+  - prometheus.yml: Specifies the Prometheus target application.
+  - inputFile: The file mounted as a volume to the CSV server for data input.
 
 Usage
 

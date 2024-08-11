@@ -24,21 +24,22 @@ Generating the Required File:
 
 Running the Container with the Input File:
 
-    docker run -d --name csvserver -p 9393:9300 -v "/root/inputFile:/csvserver/inputdata" infracloudio/csvserver:latest
+    docker run -d --name csvserver -p 9393:9300 -v "$(pwd)/inputFile:/csvserver/inputdata" infracloudio/csvserver:latest
 
 The container is running successfully. 
 kill the container need to be add env variable
 Setting Environment Variables:
 
-        docker run -d --name csvserver -p 9393:9300 -v "/root/inputFile:/csvserver/inputdata" -e CSVSERVER_BORDER=Orange infracloudio/csvserver:latest
+        docker run -d --name csvserver -p 9393:9300 -v "$(pwd)/inputFile:/csvserver/inputdata" -e CSVSERVER_BORDER=Orange infracloudio/csvserver:latest
 
 The application is accessible at http://localhost:9393, displaying the title with an orange border.
 
 - Files Overview:
-  - gencsv.sh : the shell script to generate the inputfile
+  - gencsv.sh : the shell script to generate the inputFile
   - part-1-log: the file is contain the logs of docker container
   - part-1-output: store the result of application csvserver
   - part-1-cmd: the cmd used to run the container with inputfile and enviroment variable
+  - inputFile: the file containe the data generated with gencsv.sh shell script
 
 **Part 2**: Docker Compose Setup
 - **The requirefile available in part-2 folder**

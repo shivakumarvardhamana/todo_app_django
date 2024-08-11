@@ -5,7 +5,7 @@ Project Structure
 
 The project is divided into three parts:
 - ##Part-1: Running the CSV Server Container
- -  **The requirefile available in part-1 folder
+ -  The requirefile available in part-1 folder
  - image: infracloudio/csvserver:latest
 
        docker run -d --name csvserver infracloudio/csvserver:latest
@@ -26,13 +26,13 @@ Running the Container with the Input File:
 
     docker run -d --name csvserver -p 9393:9300 -v "/root/inputFile:/csvserver/inputdata" infracloudio/csvserver:latest
 
-The container was successfully running. and kill it 
-
+The container is running successfully. 
+kill the container need to be add env variable
 Setting Environment Variables:
 
         docker run -d --name csvserver-5 -p 9393:9300 -v "/root/inputFile:/csvserver/inputdata" -e CSVSERVER_BORDER=Orange infracloudio/csvserver:latest
 
-The application was accessible at http://localhost:9393, displaying the title with an orange border.
+The application is accessible at http://localhost:9393, displaying the title with an orange border.
 
 Files Overview:
 gencsv.sh : the shell script to generate the inputfile
@@ -41,7 +41,7 @@ part-1-output: store the result of application csvserver
 part-1-cmd: the cmd used to run the container with inputfile and enviroment variable
 
 Part 2: 
-The requirefile available in part-2 folder
+- The requirefile available in part-2 folder
 Docker Compose Setup
 
 In this part, the Docker commands from Part 1 were converted into a docker-compose.yml file for easier management.

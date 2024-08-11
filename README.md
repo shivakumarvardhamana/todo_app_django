@@ -4,11 +4,11 @@ This project demonstrates the deployment of a CSV server application using Docke
 Project Structure
 
 The project is divided into three parts:
-- ##Part-11: Running the CSV Server Container
-   The requirefile available in part-1 folder
-  image: infracloudio/csvserver:latest
+- ##Part-1: Running the CSV Server Container
+ -  **The requirefile available in part-1 folder
+ - image: infracloudio/csvserver:latest
 
-    docker run -d --name csvserver infracloudio/csvserver:latest
+       docker run -d --name csvserver infracloudio/csvserver:latest
 
 steate of The container exited with an error (Exited (1)) due to a missing file.
 
@@ -52,13 +52,13 @@ An environment file (csvserver.env) was created to store variables required by t
 Docker Compose Configuration:
 The docker-compose.yml file was created to automate the setup of the CSV server with the necessary configurations:
 
-    bash
+
 
     docker-compose up -d
 
 To stop the services, use:
 
-      bash
+   
 
         docker-compose down
 - csvserver.env : file to store the env variable need to pass in docker-compose file to read as file
@@ -84,12 +84,11 @@ Usage
 
 To start the entire setup, run:
 
-    bash
+
 
     docker-compose up -d
 
 To stop the services, run:
 
-    bash
 
     docker-compose down

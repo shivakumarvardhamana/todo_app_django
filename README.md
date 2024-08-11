@@ -30,7 +30,7 @@ The container is running successfully.
 kill the container need to be add env variable
 Setting Environment Variables:
 
-        docker run -d --name csvserver-5 -p 9393:9300 -v "/root/inputFile:/csvserver/inputdata" -e CSVSERVER_BORDER=Orange infracloudio/csvserver:latest
+        docker run -d --name csvserver -p 9393:9300 -v "/root/inputFile:/csvserver/inputdata" -e CSVSERVER_BORDER=Orange infracloudio/csvserver:latest
 
 The application is accessible at http://localhost:9393, displaying the title with an orange border.
 
